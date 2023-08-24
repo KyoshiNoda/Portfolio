@@ -1,7 +1,11 @@
-import Main from "@/pages/Main"
+import Header from "@/components/Header";
+import Main from "@/pages/Main";
 
 export default function Home() {
   return (
-    <Main/>
-  )
+    <>
+      <Header />
+      <Main />
+    </>
+  );
 }
