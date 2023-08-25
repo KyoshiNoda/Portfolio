@@ -1,11 +1,10 @@
-import React from 'react'
-
-type Props = {}
-
-function Main({}: Props) {
+import Intro from "@/components/Intro";
+function Main() {
   return (
-    <div>Main</div>
-  )
+    <div>
+      <Intro />
+    </div>
+  );
 }
 
-export default Main
+export default Main;

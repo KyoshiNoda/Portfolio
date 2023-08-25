@@ -3,6 +3,7 @@ import { useState } from "react";
 import { userInfo, headerItems } from "../constants/constant";
 import { NavItems } from "@/Types/Header";
 import { BiMenu } from "react-icons/bi";
+import ThemeSwitcher from "@/app/ThemeSwitcher";
 function Header() {
   const [isMobile, setIsMobile] = useState<boolean>(false);
   return (
@@ -17,7 +18,7 @@ function Header() {
       </div>
       <div
         className={`mr-8 md:space-x-6 mt-3 md:mt-0 ${
-          isMobile ? "block" : "hidden"
+          !isMobile ? "block" : "hidden"
         }`}
       >
         {Object.keys(headerItems).map((item) => (
@@ -28,6 +29,9 @@ function Header() {
             {headerItems[item as keyof NavItems].label}
           </a>
         ))}
+        <div className="block md:inline-block">
+          <ThemeSwitcher />
+        </div>
       </div>
     </header>
   );
