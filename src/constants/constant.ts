@@ -23,6 +23,7 @@ export const userInfo: UserObject = {
     "Express",
     "Angular",
   ],
+  
 };
 
 export const headerItems: NavItems = {
