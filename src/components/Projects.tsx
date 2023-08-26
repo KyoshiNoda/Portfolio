@@ -5,7 +5,7 @@ function Projects() {
   return (
     <section
       id={headerItems.projects.page}
-      className="flex flex-col text-center justify-center items-center"
+      className="flex flex-col text-center justify-center items-center mb-10"
     >
       <h1 className={"text-6xl my-6 mt-28"}>Projects</h1>
       <div className="flex break-words flex-wrap text-center justify-center items-center">

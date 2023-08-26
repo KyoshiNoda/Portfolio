@@ -7,7 +7,6 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { MdOutlineWork } from "react-icons/md";
 import { useTheme } from "next-themes";
-//rgb(8, 76, 130)
 export default function Carrer() {
   const { theme } = useTheme();
   const contentStyle =
