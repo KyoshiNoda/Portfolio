@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { userInfo, headerItems } from "../constants/constant";
-import { NavItems } from "@/Types/NavBar";
+import { NavItems } from "@/types/NavBar";
 import { BiMenu } from "react-icons/bi";
 import ThemeSwitcher from "@/app/ThemeSwitcher";
 function NavBar() {
