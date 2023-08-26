@@ -32,8 +32,8 @@ export const headerItems: NavItems = {
 };
 
 export const projects = {
-  scheduleFinder: { image: "" },
-  gymPal: { image: "" },
-  prosCons: { image: "" },
-  steamTime: { image: "" },
+  scheduleFinder: { image: "https://i.ibb.co/Z1qBS7X/Screenshot-2023-08-26-at-2-17-51-AM.png" },
+  codingforall: { image: "https://i.ibb.co/dP4srJx/codingforall.png" },
+  prosCons: { image: "https://i.ibb.co/SRRKZYr/proscons.png" },
+  gymPal: { image: "https://i.ibb.co/Y37kJL8/gymPal.png" },
 };
