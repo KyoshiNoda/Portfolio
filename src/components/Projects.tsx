@@ -19,7 +19,7 @@ function Projects() {
               alt=""
               width={600}
               height={600}
-              className="mt-4 md:m-1 cursor-pointer"
+              className="mt-4 md:m-1 cursor-pointer hover:opacity-25"
               key={projects[project as keyof Projects].name}
             />
           </Link>
