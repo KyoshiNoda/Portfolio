@@ -10,30 +10,10 @@ export default function Carrer() {
   return (
     <section
       id={headerItems.carrer.page}
-      className="flex-col justify-center items-center md:flex-row"
+      className="flex-col justify-center items-center md:flex-row pt-32 pl-11"
     >
-      <h1 className="text-6xl my-6 mt-3 invisible">Carrer</h1>
+      <span className="text-6xl my-6 mt-3">Carrer</span>
       <VerticalTimeline className=" space-y-24 mt-28">
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="2021 - 2023"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={<MdOutlineWork />}
-        >
-          <h1 className="vertical-timeline-element-title dark:text-black text-2xl">
-            Computer Science Tutor
-          </h1>
-          <h2 className="text-sm">Farmingdale State College</h2>
-          <h4 className="vertical-timeline-element-subtitle dark:text-black font-semibold">
-            Farmingdale, NY
-          </h4>
-          <p className="dark:text-black">
-            ● Tutored various programming courses (Intro Programming, Object
-            Oriented, Data Structures) at university level with over 50 active
-            students. <br />● Responsible for creating personalized practice
-            questions and demonstrating strong communication skills.
-          </p>
-        </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="2021 - 2023"
@@ -54,6 +34,26 @@ export default function Carrer() {
             ● Responsible for organizing numerous events that involved technical
             talks with industry professionals. <br />● Responsible for
             interviewing over 50+ candidates for executive positions
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="April 2021 - May 2023"
+          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          icon={<MdOutlineWork />}
+        >
+          <h1 className="vertical-timeline-element-title dark:text-black text-2xl">
+            Computer Science Tutor
+          </h1>
+          <h2 className="text-sm">Farmingdale State College</h2>
+          <h4 className="vertical-timeline-element-subtitle dark:text-black font-semibold">
+            Farmingdale, NY
+          </h4>
+          <p className="dark:text-black">
+            ● Tutored various programming courses (Intro Programming, Object
+            Oriented, Data Structures) at university level with over 50 active
+            students. <br />● Responsible for creating personalized practice
+            questions and demonstrating strong communication skills.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
