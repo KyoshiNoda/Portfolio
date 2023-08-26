@@ -1,10 +1,10 @@
 "use client";
 import { useState } from "react";
 import { userInfo, headerItems } from "../constants/constant";
-import { NavItems } from "@/Types/Header";
+import { NavItems } from "@/Types/NavBar";
 import { BiMenu } from "react-icons/bi";
 import ThemeSwitcher from "@/app/ThemeSwitcher";
-function Header() {
+function NavBar() {
   const [isMobile, setIsMobile] = useState<boolean>(false);
   return (
     <header className="bg-white p-6 md:flex w-full z-10 justify-between fixed top-0 text-black">
@@ -37,4 +37,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default NavBar;
