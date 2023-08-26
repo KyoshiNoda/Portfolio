@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { headerItems } from "@/constants/constant";
 import { userInfo } from "@/constants/constant";
+import aboutPicture from '../../public/aboutPicture.jpg';
 function About() {
   return (
     <section
@@ -17,16 +18,16 @@ function About() {
       </div>
       <div className="flex flex-col justify-center items-center text-center">
         <Image
-          src={userInfo.picture}
+          src={aboutPicture}
           alt=""
           width={300}
           height={300}
-          className={"m-auto"}
+          className={"m-auto rounded shadow-xl"}
         />
         <div className="break-words w-3/4 mt-3">
           {userInfo.skills.map((skill) => (
             <span
-              className={"bg-gray-200 m-1 p-2 rounded-md inline-block text-sm"}
+              className={"bg-gray-200 m-1 p-2 rounded-md inline-block text-sm text-black"}
               key="skill"
             >
               {skill}
