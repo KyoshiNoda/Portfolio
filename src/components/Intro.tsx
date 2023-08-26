@@ -1,6 +1,9 @@
+'use client';
 import { headerItems } from "@/constants/constant";
 import { userInfo } from "@/constants/constant";
 import Image from "next/image";
+import { FaChevronDown } from "react-icons/fa";
+import { Link as ScrollLink } from "react-scroll";
 function Intro() {
   return (
     <section
@@ -35,9 +38,16 @@ function Intro() {
           className={"md:mt-4 md:mb-4 sm:"}
           dangerouslySetInnerHTML={{ __html: userInfo.heading }}
         />
-        <button className="bg-blue-600 w-28 h-10 rounded text-neutral-100">
-          Projects
-        </button>
+        <ScrollLink
+          to={headerItems.projects.page}
+          className={
+            "bg-blue-600 rounded text-neutral-100 flex w-28 h-10 m-auto items-center justify-center md:m-0"
+          }
+          spy={true}
+          smooth={true}
+        >
+          Projects <FaChevronDown className={"ml-2"} />
+        </ScrollLink>
       </div>
     </section>
   );
