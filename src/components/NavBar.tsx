@@ -4,6 +4,8 @@ import { userInfo, headerItems } from "../constants/constant";
 import { NavItems } from "@/types/NavBar";
 import { BiMenu } from "react-icons/bi";
 import ThemeSwitcher from "@/app/ThemeSwitcher";
+import { Link as ScrollLink } from "react-scroll";
+
 function NavBar() {
   const [isMobile, setIsMobile] = useState<boolean>(false);
   return (
@@ -22,12 +24,15 @@ function NavBar() {
         }`}
       >
         {Object.keys(headerItems).map((item) => (
-          <a
+          <ScrollLink
+            to={headerItems[item as keyof NavItems].page}
             key={headerItems[item as keyof NavItems].label}
             className="block md:inline-block cursor-pointer"
+            spy={true}
+            smooth={true}
           >
             {headerItems[item as keyof NavItems].label}
-          </a>
+          </ScrollLink>
         ))}
         <div className="block md:inline-block">
           <ThemeSwitcher />
