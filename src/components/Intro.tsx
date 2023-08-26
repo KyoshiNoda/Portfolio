@@ -35,6 +35,9 @@ function Intro() {
           className={"md:mt-4 md:mb-4 sm:"}
           dangerouslySetInnerHTML={{ __html: userInfo.heading }}
         />
+        <button className="bg-blue-600 w-28 h-10 rounded text-neutral-100">
+          Projects
+        </button>
       </div>
     </section>
   );
