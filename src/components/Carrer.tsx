@@ -6,17 +6,24 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { MdOutlineWork } from "react-icons/md";
+import { useTheme } from "next-themes";
+//rgb(8, 76, 130)
 export default function Carrer() {
+  const { theme } = useTheme();
+  const contentStyle =
+    theme === "dark"
+      ? { background: "rgb(4, 59, 102)", color: "#fff" }
+      : { background: "rgb(33, 150, 243)", color: "#fff" };
   return (
     <section
       id={headerItems.carrer.page}
-      className="flex-col justify-center items-center md:flex-row pt-32 pl-11"
+      className="flex-col justify-center items-center md:flex-row pt-32 pl-11 bg-blue-300 dark:bg-slate-900"
     >
-      <span className="text-6xl my-6 mt-3">Carrer</span>
+      <span className="text-6xl my-6 mt-3 text-white">Carrer</span>
       <VerticalTimeline className=" space-y-24 mt-28">
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2021 - 2023"
+          date="April 2021 - May 2023"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<MdOutlineWork />}
         >
@@ -24,7 +31,7 @@ export default function Carrer() {
             Vice President ACM
           </h1>
           <h2 className="text-sm">Farmingdale State College</h2>
-          <h4 className="vertical-timeline-element-subtitle dark:text-black font-semibold">
+          <h4 className="vertical-timeline-element-subtitle dark:text-black font-bold">
             Farmingdale, NY
           </h4>
           <p className="dark:text-black">
@@ -38,7 +45,7 @@ export default function Carrer() {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="April 2021 - May 2023"
+          date="August 2021 - May 2023"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<MdOutlineWork />}
         >
@@ -46,7 +53,7 @@ export default function Carrer() {
             Computer Science Tutor
           </h1>
           <h2 className="text-sm">Farmingdale State College</h2>
-          <h4 className="vertical-timeline-element-subtitle dark:text-black font-semibold">
+          <h4 className="vertical-timeline-element-subtitle dark:text-black font-bold">
             Farmingdale, NY
           </h4>
           <p className="dark:text-black">
@@ -58,7 +65,7 @@ export default function Carrer() {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          contentStyle={{ background: contentStyle.background, color: "#fff" }}
           contentArrowStyle={{ borderRight: ")" }}
           date="2023 - present"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
@@ -68,7 +75,7 @@ export default function Carrer() {
             Software Engineer Intern
           </h1>
           <h1 className="text-xl">SAS Institute</h1>
-          <h4 className="vertical-timeline-element-subtitle font-semibold">
+          <h4 className="vertical-timeline-element-subtitle font-bold">
             Cary, NC
           </h4>
           <p>
