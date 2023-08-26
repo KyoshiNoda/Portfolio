@@ -17,7 +17,7 @@ export default function Carrer() {
   return (
     <section
       id={headerItems.carrer.page}
-      className="flex-col justify-center items-center md:flex-row pt-32 pl-11 bg-blue-300 dark:bg-slate-900"
+      className="flex-col justify-center items-center md:flex-row pt-32 pl-11 bg-blue-600 dark:bg-slate-900"
     >
       <span className="text-6xl my-6 mt-3 text-white">Carrer</span>
       <VerticalTimeline className=" space-y-24 mt-28">
