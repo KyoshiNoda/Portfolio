@@ -5,7 +5,7 @@ function Intro() {
   return (
     <section
       id={headerItems.home.page}
-      className="h-screen flex flex-col text-center justify-center items-center md:flex-row"
+      className="h-screen flex flex-col text-center justify-center items-center md:flex-row dark:text-white text-black"
     >
       <div>
         <Image
@@ -22,7 +22,7 @@ function Intro() {
         </h1>
         <h1 className="text-2xl mt-5 md:text-3xl">
           Hi, I&#39;m{" "}
-          <span className="text-red-600 text-3xl md:text-4xl">
+          <span className="text-red-600 text-3xl md:text-4xl dark:text-blue-600">
             {userInfo.name}
           </span>
         </h1>
