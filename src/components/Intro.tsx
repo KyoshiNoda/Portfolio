@@ -4,7 +4,6 @@ import { userInfo } from "@/constants/constant";
 import Image from "next/image";
 import { FaChevronDown } from "react-icons/fa";
 import { Link as ScrollLink } from "react-scroll";
-import { Button } from "flowbite-react";
 function Intro() {
   return (
     <section

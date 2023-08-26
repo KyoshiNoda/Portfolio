@@ -1,10 +1,11 @@
 interface HeaderItem {
-  label: string,
-  page: string
+  label: string;
+  page: string;
 }
 
 export interface NavItems {
-  home: HeaderItem
-  about: HeaderItem,
-  projects: HeaderItem
+  home: HeaderItem;
+  about: HeaderItem;
+  projects: HeaderItem;
+  carrer: HeaderItem;
 }

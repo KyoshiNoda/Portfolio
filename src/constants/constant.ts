@@ -30,6 +30,7 @@ export const headerItems: NavItems = {
   home: { label: "Home", page: "home" },
   about: { label: "About", page: "about" },
   projects: { label: "Projects", page: "projects" },
+  carrer: { label: "Carrer", page: "carrer" }
 };
 
 export const projects = {
