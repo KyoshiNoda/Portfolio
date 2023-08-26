@@ -1,5 +1,4 @@
 "use client";
-import { Timeline } from "flowbite-react";
 import { headerItems } from "@/constants/constant";
 import {
   VerticalTimeline,
@@ -16,48 +15,44 @@ export default function Carrer() {
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2010 - 2011"
+          date="2021 - 2023"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<MdOutlineWork />}
         >
-          <h3 className="vertical-timeline-element-title dark:text-black">Art Director</h3>
+          <h1 className="vertical-timeline-element-title dark:text-black text-2xl">
+            Computer Science Tutor
+          </h1>
+          <h2 className="text-sm">Farmingdale State College</h2>
           <h4 className="vertical-timeline-element-subtitle dark:text-black font-semibold">
-            San Francisco, CA
+            Farmingdale, NY
           </h4>
           <p className="dark:text-black">
-            Creative Direction, User Experience, Visual Design, SEO, Online
-            Marketing
+            ● Tutored various programming courses (Intro Programming, Object
+            Oriented, Data Structures) at university level with over 50 active
+            students. <br />● Responsible for creating personalized practice
+            questions and demonstrating strong communication skills.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2010 - 2011"
+          date="2021 - 2023"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<MdOutlineWork />}
         >
-          <h3 className="vertical-timeline-element-title dark:text-black">Art Director</h3>
+          <h1 className="vertical-timeline-element-title dark:text-black text-2xl">
+            Vice President ACM
+          </h1>
+          <h2 className="text-sm">Farmingdale State College</h2>
           <h4 className="vertical-timeline-element-subtitle dark:text-black font-semibold">
-            San Francisco, CA
+            Farmingdale, NY
           </h4>
           <p className="dark:text-black">
-            Creative Direction, User Experience, Visual Design, SEO, Online
-            Marketing
-          </p>
-        </VerticalTimelineElement>
-
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="2010 - 2011"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={<MdOutlineWork />}
-        >
-          <h3 className="vertical-timeline-element-title dark:text-black">Art Director</h3>
-          <h4 className="vertical-timeline-element-subtitle dark:text-black font-semibold">
-            San Francisco, CA
-          </h4>
-          <p className="dark:text-black">
-            Creative Direction, User Experience, Visual Design, SEO, Online
-            Marketing
+            ● Founded a computer science ACM Chapter for university with over
+            250 active members.
+            <br />
+            ● Responsible for organizing numerous events that involved technical
+            talks with industry professionals. <br />● Responsible for
+            interviewing over 50+ candidates for executive positions
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -68,11 +63,24 @@ export default function Carrer() {
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<MdOutlineWork />}
         >
-          <h3 className="vertical-timeline-element-title">Creative Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+          <h1 className="vertical-timeline-element-title dark:text-black text-2xl">
+            Software Engineer Intern
+          </h1>
+          <h2 className="text-sm">SAS Inc.</h2>
+          <h4 className="vertical-timeline-element-subtitle dark:text-black font-semibold">
+            Cary, NC
+          </h4>
           <p className="dark:text-black">
-            Creative Direction, User Experience, Visual Design, Project
-            Management, Team Leading
+            ●  Handled full stack development for license generations for all
+            SAS software. <br/>
+            ● Developed responsive user-friendly front-end
+            components with Angular with Typescript that handled license
+            metadata.<br/>
+            ● Implemented RESTful APIs using Spring Boot that dealt
+            with license expirations. <br/>
+            ● Developed comprehensive unit tests for
+            both front-end and back-end, ensuring a robust and error-free
+            application.
           </p>
         </VerticalTimelineElement>
       </VerticalTimeline>
