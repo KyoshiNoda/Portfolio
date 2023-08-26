@@ -7,7 +7,7 @@ import ThemeSwitcher from "@/app/ThemeSwitcher";
 function NavBar() {
   const [isMobile, setIsMobile] = useState<boolean>(false);
   return (
-    <header className="bg-white p-6 md:flex w-full z-10 justify-between fixed top-0 text-black">
+    <header className="bg-gray-50 dark:bg-slate-800 dark:text-white p-6 md:flex w-full z-10 justify-between fixed top-0 text-black">
       <div className="flex justify-between">
         <h2 className="text-2xl font-bold">{userInfo.name}</h2>
         <BiMenu
