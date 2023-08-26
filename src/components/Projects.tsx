@@ -1,22 +1,28 @@
 import Image from "next/image";
 import { headerItems, projects } from "@/constants/constant";
+import Link from "next/link";
 function Projects() {
   return (
     <section
       id={headerItems.projects.page}
-      className="flex flex-col text-center justify-center items-center my-20"
+      className="flex flex-col text-center justify-center items-center my-30"
     >
       <h1 className={"text-6xl my-6"}>Projects</h1>
       <div className="flex break-words flex-wrap text-center justify-center items-center">
         {Object.keys(projects).map((project) => (
-          <Image
-            src={projects[project as keyof Projects].image}
-            alt=""
-            width={300}
-            height={300}
-            className="mt-4 md:m-1 cursor-pointer"
-            key="project"
-          />
+          <Link
+            href={projects[project as keyof Projects].link}
+            key={projects[project as keyof Projects].name}
+          >
+            <Image
+              src={projects[project as keyof Projects].image}
+              alt=""
+              width={600}
+              height={600}
+              className="mt-4 md:m-1 cursor-pointer"
+              key={projects[project as keyof Projects].name}
+            />
+          </Link>
         ))}
       </div>
     </section>
