@@ -4,7 +4,7 @@ import { userInfo } from "@/constants/constant";
 import Image from "next/image";
 import { FaChevronDown } from "react-icons/fa";
 import { Link as ScrollLink } from "react-scroll";
-
+import profilePicture from "../../public/profilePicture.jpg";
 function Intro() {
   return (
     <section
@@ -13,7 +13,7 @@ function Intro() {
     >
       <div className="mt-10 md:mt-0">
         <Image
-          src={userInfo.picture}
+          src={profilePicture}
           alt=""
           width={300}
           height={300}
@@ -21,7 +21,11 @@ function Intro() {
         />
       </div>
       <div className={"md:ml-4 sm:ml-2 md:w-1/2"}>
-        <h1 className={"text-4xl sm:text-5xl md:text-7xl uppercase hidden md:block"}>
+        <h1
+          className={
+            "text-4xl sm:text-5xl md:text-7xl uppercase hidden md:block"
+          }
+        >
           Software
           <br />
           Engineer
