@@ -7,7 +7,7 @@ function Projects() {
       id={headerItems.projects.page}
       className="flex flex-col text-center justify-center items-center mb-10"
     >
-      <h1 className={"text-6xl my-6 mt-28"}>Projects</h1>
+      <h1 className="text-6xl my-6 mt-28">Projects</h1>
       <div className="flex break-words flex-wrap text-center justify-center items-center">
         {Object.keys(projects).map((project) => (
           <Link
