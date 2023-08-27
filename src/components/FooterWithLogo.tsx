@@ -7,10 +7,10 @@ export default function FooterWithLogo() {
     <Footer container>
       <div className="w-full text-center">
         <div className="w-full justify-between sm:flex sm:items-center sm:justify-between">
-          <div className='flex gap-2 items-center'>
+          <a className='flex gap-2 items-center cursor-pointer' href = "https://github.com/KyoshiNoda/portfolio">
             <AiFillGithub size = {48}/>
             <h1 className='text-xl font-bold'>Repo</h1>
-          </div>
+          </a>
           <Footer.LinkGroup className='flex gap-3'>
             <Footer.Link href="https://docs.google.com/document/d/e/2PACX-1vTZVdaSPed1psqgoEL0pVTVQpLVjWlptDNA0Dk23DLGez_5K_YejmD_JDt0hOAiJsvqJss0FiPxS5KJ/pub">
               Resume
