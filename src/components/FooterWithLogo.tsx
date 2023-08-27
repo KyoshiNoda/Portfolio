@@ -12,17 +12,14 @@ export default function FooterWithLogo() {
             <h1 className='text-xl font-bold'>Repo</h1>
           </div>
           <Footer.LinkGroup className='flex gap-3'>
-            <Footer.Link href="#">
-              About
+            <Footer.Link href="https://docs.google.com/document/d/e/2PACX-1vTZVdaSPed1psqgoEL0pVTVQpLVjWlptDNA0Dk23DLGez_5K_YejmD_JDt0hOAiJsvqJss0FiPxS5KJ/pub">
+              Resume
             </Footer.Link>
-            <Footer.Link href="#">
-              
+            <Footer.Link href="https://devpost.com/KyoshiNoda">
+              Devpost
             </Footer.Link>
-            <Footer.Link href="#">
-              Licensing
-            </Footer.Link>
-            <Footer.Link href="#">
-              Contact
+            <Footer.Link href="https://www.linkedin.com/in/kyoshi-noda/">
+              Linkedin
             </Footer.Link>
           </Footer.LinkGroup>
         </div>

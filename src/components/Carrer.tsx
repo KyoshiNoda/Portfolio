@@ -22,7 +22,7 @@ export default function Carrer() {
       <VerticalTimeline className=" space-y-24 mt-28">
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="April 2021 - May 2023"
+          date="April 2021 - May 2022"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<MdOutlineWork />}
         >
@@ -66,7 +66,7 @@ export default function Carrer() {
           className="vertical-timeline-element--work"
           contentStyle={{ background: contentStyle.background, color: "#fff" }}
           contentArrowStyle={{ borderRight: ")" }}
-          date="2023 - present"
+          date="May 2023 - Present"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<MdOutlineWork />}
         >
