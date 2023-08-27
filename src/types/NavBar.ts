@@ -7,5 +7,5 @@ export interface NavItems {
   home: HeaderItem;
   about: HeaderItem;
   projects: HeaderItem;
-  carrer: HeaderItem;
+  career: HeaderItem;
 }

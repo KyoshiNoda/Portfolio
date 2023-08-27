@@ -2,7 +2,7 @@ import NavBar from "@/components/NavBar";
 import Main from "@/pages/Main";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
-import Carrer from "@/components/Carrer";
+import Career from "@/components/Career";
 import FooterWithLogo from "@/components/FooterWithLogo";
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
       <Main />
       <About />
       <Projects />
-      <Carrer />
+      <Career />
       <FooterWithLogo />
     </>
   );
