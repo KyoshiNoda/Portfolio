@@ -13,7 +13,7 @@ export default function FooterWithLogo() {
             name="Flowbite"
             src="https://flowbite.com/docs/images/logo.svg"
           />
-          <Footer.LinkGroup>
+          <Footer.LinkGroup className='flex gap-3'>
             <Footer.Link href="#">
               About
             </Footer.Link>
