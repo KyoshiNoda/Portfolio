@@ -18,7 +18,7 @@ export default function Career() {
       id={headerItems.career.page}
       className="flex-col justify-center items-center md:flex-row pt-32 pl-11 bg-blue-300 dark:bg-slate-900"
     >
-      <span className="text-6xl my-6 mt-3 text-white">Carrer</span>
+      <span className="text-6xl my-6 mt-3 text-white">Career</span>
       <VerticalTimeline className=" space-y-24 mt-28">
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
