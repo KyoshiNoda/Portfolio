@@ -10,6 +10,7 @@ import {
   BiLogoMongodb,
   BiLogoAngular,
   BiLogoTailwindCss,
+  BiLogoSass
 } from "react-icons/bi";
 import { TbBrandGolang } from "react-icons/tb";
 function About() {
@@ -109,6 +110,12 @@ function About() {
             Tailwindcss{" "}
             <span className="inline-block" style={{ verticalAlign: "middle" }}>
               <BiLogoTailwindCss size={20} />
+            </span>
+          </span>
+          <span className="bg-gray-200 m-1 p-2 rounded-md inline-block text-sm text-black ">
+            Sass{" "}
+            <span className="inline-block" style={{ verticalAlign: "middle" }}>
+              <BiLogoSass size={20} />
             </span>
           </span>
         </div>
