@@ -79,7 +79,7 @@ function About() {
           </span>
 
           <span className="bg-gray-200 m-1 p-2 rounded-md inline-block text-sm text-black ">
-            MYSQL{" "}
+            MySQL{" "}
             <span className="inline-block" style={{ verticalAlign: "middle" }}>
               <SiMysql size={20} />
             </span>
