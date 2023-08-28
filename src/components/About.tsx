@@ -17,7 +17,7 @@ function About() {
   return (
     <section
       id={headerItems.about.page}
-      className="flex flex-col text-center justify-center items-center md:flex-row md:text-start"
+      className="flex flex-col text-center justify-center items-center md:flex-row md:text-start pt-32 pb-48"
     >
       <div className={"m-4 md:ml-20 sm:ml-12 md:w-1/2"}>
         <h1 className={"text-6xl my-6"}>About</h1>
