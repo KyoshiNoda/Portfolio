@@ -11,7 +11,7 @@ function Intro() {
       id={headerItems.home.page}
       className="h-screen flex flex-col text-center justify-center items-center md:flex-row md:text-start"
     >
-      <div className="mt-10 md:mt-0">
+      <div className="mt-28 md:mt-0">
         <Image
           src={profilePicture}
           alt=""

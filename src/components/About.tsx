@@ -10,17 +10,17 @@ import {
   BiLogoMongodb,
   BiLogoAngular,
   BiLogoTailwindCss,
-  BiLogoSass
+  BiLogoSass,
 } from "react-icons/bi";
 import { TbBrandGolang } from "react-icons/tb";
 function About() {
   return (
     <section
       id={headerItems.about.page}
-      className="flex flex-col text-center justify-center items-center md:flex-row md:text-start pt-32 pb-48"
+      className="flex flex-col text-center justify-center items-center md:flex-row md:text-start pt- pb-48"
     >
       <div className={"m-4 md:ml-20 sm:ml-12 md:w-1/2"}>
-        <h1 className={"text-6xl my-6"}>About</h1>
+        <h1 className={"text-6xl my-6 pt-4 md:pt-0"}>About</h1>
         <h2 className={"text-3xl my-4"}>Get to know me!</h2>
         <div
           dangerouslySetInnerHTML={{ __html: userInfo.about }}
