@@ -7,7 +7,7 @@ export const userInfo: UserObject = {
   heading:
     "I am a passionate Computer Science student with a strong foundation in programming and problem-solving. Alongside my studies, I have actively shared my knowledge as a tutor for various CS courses. I also gained practical experience through a rewarding software engineering internship, where I contributed to real-world projects and honed my development skills.",
 
-  about: `<p>I'm a junior in my second semester at <b>Farmingdale State College</b>, set to graduate in Fall 2023.</p>
+  about: `<p>I'm a junior in my second semester at <b>Farmingdale State College</b>, set to graduate in Fall 2024.</p>
     <p>I'm a dedicated developer who enjoys bringing ideas to life through coding.</p>
     <p> Outside of coding, I'm a casual soccer player and fan, and I also love to kick back and play video games.</p>`,
   skills: [
@@ -23,34 +23,33 @@ export const userInfo: UserObject = {
     "Express",
     "Angular",
   ],
-  
 };
 
 export const headerItems: NavItems = {
   home: { label: "Home", page: "home" },
   about: { label: "About", page: "about" },
   projects: { label: "Projects", page: "projects" },
-  career: { label: "Career", page: "career" }
+  career: { label: "Career", page: "career" },
 };
 
 export const projects = {
   scheduleFinder: {
-    name: 'scheduleFinder',
+    name: "scheduleFinder",
     image: "https://i.ibb.co/Z1qBS7X/Screenshot-2023-08-26-at-2-17-51-AM.png",
     link: "https://github.com/KyoshiNoda/ScheduleFinder",
   },
   codingforall: {
-    name: 'codingforall',
+    name: "codingforall",
     image: "https://i.ibb.co/dP4srJx/codingforall.png",
     link: "https://github.com/KyoshiNoda/FSC-Coding-Society",
   },
   prosCons: {
-    name: 'prosCons',
+    name: "prosCons",
     image: "https://i.ibb.co/SRRKZYr/proscons.png",
     link: "https://github.com/KyoshiNoda/ProsCons",
   },
   steamTime: {
-    name: 'steamTime',
+    name: "steamTime",
     image: "https://i.ibb.co/RNyC9ht/Screenshot-2023-08-26-at-3-09-12-AM.png",
     link: "https://github.com/KyoshiNoda/GymPal",
   },
