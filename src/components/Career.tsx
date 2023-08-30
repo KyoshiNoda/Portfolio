@@ -20,49 +20,7 @@ export default function Career() {
     >
       <span className="text-6xl my-6 mt-3 text-white">Career</span>
       <VerticalTimeline className=" space-y-24 mt-28">
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="April 2021 - May 2022"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={<MdOutlineWork />}
-        >
-          <h1 className="vertical-timeline-element-title dark:text-black text-2xl">
-            Vice President ACM
-          </h1>
-          <h2 className="text-sm">Farmingdale State College</h2>
-          <h4 className="vertical-timeline-element-subtitle dark:text-black font-bold">
-            Farmingdale, NY
-          </h4>
-          <p className="dark:text-black">
-            ● Founded a computer science ACM Chapter for university with over
-            250 active members.
-            <br />
-            ● Responsible for organizing numerous events that involved technical
-            talks with industry professionals. <br />● Responsible for
-            interviewing over 50+ candidates for executive positions
-          </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="August 2021 - May 2023"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={<MdOutlineWork />}
-        >
-          <h1 className="vertical-timeline-element-title dark:text-black text-2xl">
-            Computer Science Tutor
-          </h1>
-          <h2 className="text-sm">Farmingdale State College</h2>
-          <h4 className="vertical-timeline-element-subtitle dark:text-black font-bold">
-            Farmingdale, NY
-          </h4>
-          <p className="dark:text-black">
-            ● Tutored various programming courses (Intro Programming, Object
-            Oriented, Data Structures) at university level with over 50 active
-            students. <br />● Responsible for creating personalized practice
-            questions and demonstrating strong communication skills.
-          </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
+      <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: contentStyle.background, color: "#fff" }}
           contentArrowStyle={{ borderRight: ")" }}
@@ -87,6 +45,48 @@ export default function Career() {
             expirations. <br />● Developed comprehensive unit tests for both
             front-end and back-end, ensuring a robust and error-free
             application.
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="August 2021 - May 2023"
+          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          icon={<MdOutlineWork />}
+        >
+          <h1 className="vertical-timeline-element-title dark:text-black text-2xl">
+            Computer Science Tutor
+          </h1>
+          <h2 className="text-sm">Farmingdale State College</h2>
+          <h4 className="vertical-timeline-element-subtitle dark:text-black font-bold">
+            Farmingdale, NY
+          </h4>
+          <p className="dark:text-black">
+            ● Tutored various programming courses (Intro Programming, Object
+            Oriented, Data Structures) at university level with over 50 active
+            students. <br />● Responsible for creating personalized practice
+            questions and demonstrating strong communication skills.
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="April 2021 - May 2022"
+          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          icon={<MdOutlineWork />}
+        >
+          <h1 className="vertical-timeline-element-title dark:text-black text-2xl">
+            Vice President ACM
+          </h1>
+          <h2 className="text-sm">Farmingdale State College</h2>
+          <h4 className="vertical-timeline-element-subtitle dark:text-black font-bold">
+            Farmingdale, NY
+          </h4>
+          <p className="dark:text-black">
+            ● Founded a computer science ACM Chapter for university with over
+            250 active members.
+            <br />
+            ● Responsible for organizing numerous events that involved technical
+            talks with industry professionals. <br />● Responsible for
+            interviewing over 50+ candidates for executive positions
           </p>
         </VerticalTimelineElement>
       </VerticalTimeline>
