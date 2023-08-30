@@ -14,6 +14,7 @@ function Projects() {
             href={projects[project as keyof Projects].link}
             key={projects[project as keyof Projects].name}
           >
+            <h2 className="">{projects[project as keyof Projects].name}</h2>
             <Image
               src={projects[project as keyof Projects].image}
               alt=""
