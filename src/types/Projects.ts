@@ -1,6 +1,6 @@
 interface Projects {
-  scheduleFinder: object;
-  codingforall: object;
-  prosCons: object;
-  steamTime: object;
+  ScheduleFinder: object;
+  Codingforall: object;
+  ProsCons: object;
+  SteamTime: object;
 }

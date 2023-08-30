@@ -33,23 +33,23 @@ export const headerItems: NavItems = {
 };
 
 export const projects = {
-  scheduleFinder: {
-    name: "scheduleFinder",
+  ScheduleFinder: {
+    name: "ScheduleFinder",
     image: "https://i.ibb.co/Z1qBS7X/Screenshot-2023-08-26-at-2-17-51-AM.png",
     link: "https://github.com/KyoshiNoda/ScheduleFinder",
   },
-  codingforall: {
-    name: "codingforall",
+  Codingforall: {
+    name: "CodingForAll",
     image: "https://i.ibb.co/dP4srJx/codingforall.png",
     link: "https://github.com/KyoshiNoda/FSC-Coding-Society",
   },
-  prosCons: {
-    name: "prosCons",
+  ProsCons: {
+    name: "ProsCons",
     image: "https://i.ibb.co/SRRKZYr/proscons.png",
     link: "https://github.com/KyoshiNoda/ProsCons",
   },
-  steamTime: {
-    name: "steamTime",
+  SteamTime: {
+    name: "SteamTime",
     image: "https://i.ibb.co/RNyC9ht/Screenshot-2023-08-26-at-3-09-12-AM.png",
     link: "https://github.com/KyoshiNoda/GymPal",
   },

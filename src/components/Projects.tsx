@@ -8,21 +8,26 @@ function Projects() {
       className="flex flex-col text-center justify-center items-center mb-10"
     >
       <h1 className="text-6xl my-6 mt-28">Projects</h1>
-      <div className="flex break-words flex-wrap text-center justify-center items-center">
+      <div className="flex break-words flex-wrap text-center justify-center items-center gap-4">
         {Object.keys(projects).map((project) => (
           <Link
             href={projects[project as keyof Projects].link}
             key={projects[project as keyof Projects].name}
           >
-            <h2 className="">{projects[project as keyof Projects].name}</h2>
-            <Image
-              src={projects[project as keyof Projects].image}
-              alt=""
-              width={600}
-              height={600}
-              className="mt-4 md:m-1 cursor-pointer hover:opacity-25"
-              key={projects[project as keyof Projects].name}
-            />
+            <h2 className="text-2xl">
+              {projects[project as keyof Projects].name}
+            </h2>
+            <div className="w-96 h-96 relative overflow-hidden cursor-pointer hover:opacity-25 rounded shadow-2xl border">
+              <div className="absolute inset-0">
+                <Image
+                  src={projects[project as keyof Projects].image}
+                  alt=""
+                  layout="fill"
+                  objectFit="cover"
+                  key={projects[project as keyof Projects].name}
+                />
+              </div>
+            </div>
           </Link>
         ))}
       </div>
