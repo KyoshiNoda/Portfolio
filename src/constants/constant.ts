@@ -54,3 +54,18 @@ export const projects = {
     link: "https://github.com/KyoshiNoda/GymPal",
   },
 };
+
+export const footerItems = {
+  Resume: {
+    name: "Resume",
+    link: "https://docs.google.com/document/d/10YZCabidMoFBT4ft1ocBWDAmS8LbiVzB/edit?usp=sharing&rtpof=true&sd=true"
+  },
+  DevPost: {
+    name: "Devpost",
+    link: "https://devpost.com/KyoshiNoda"
+  },
+  Linkedin: {
+    name: "Linkedin",
+    link: "https://www.linkedin.com/in/kyoshi-noda/"
+  }
+}
