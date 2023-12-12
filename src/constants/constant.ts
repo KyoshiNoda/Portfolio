@@ -35,25 +35,26 @@ export const headerItems: NavItems = {
 export const projects = {
   ScheduleFinder: {
     name: "ScheduleFinder",
-    image: "https://i.ibb.co/Z1qBS7X/Screenshot-2023-08-26-at-2-17-51-AM.png",
+    image: "/projects/ScheduleFinder.png",
     link: "https://github.com/KyoshiNoda/ScheduleFinder",
   },
   Codingforall: {
     name: "CodingForAll",
-    image: "https://i.ibb.co/dP4srJx/codingforall.png",
+    image: "/projects/Codingforall.png",
     link: "https://github.com/KyoshiNoda/FSC-Coding-Society",
   },
   ProsCons: {
     name: "ProsCons",
-    image: "https://i.ibb.co/SRRKZYr/proscons.png",
+    image: "/projects/ProsCons.png",
     link: "https://github.com/KyoshiNoda/ProsCons",
   },
   SteamTime: {
     name: "SteamTime",
-    image: "https://i.ibb.co/RNyC9ht/Screenshot-2023-08-26-at-3-09-12-AM.png",
+    image: "/projects/SteamTime.png",
     link: "https://github.com/KyoshiNoda/GymPal",
   },
 };
+
 
 export const footerItems = {
   Resume: {
