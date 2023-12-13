@@ -39,7 +39,7 @@ export const projects = {
     image: "/projects/ScheduleFinder.png",
     link: "https://github.com/KyoshiNoda/ScheduleFinder",
     description: [
-      "• Full stack social media application fully written in Typescript that enables users to create and compare schedules with other users.",
+      "• Full stack social media application that enables users to create and compare schedules with other users.",
       "• Allows people to browse and find new friends that are available in their free times.",
       "• Comes with advanced filtering systems on other users, making friends with common interests is extremely easy and intuitive.",
     ]

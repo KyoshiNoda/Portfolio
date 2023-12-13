@@ -18,7 +18,7 @@ function Projects() {
       : [projectDescription];
     setDescription(descriptionArray);
   };
-  
+
   useEffect(() => {
     setDescription(projects[Object.keys(projects)[0] as keyof typeof projects].description);
   }, []);
@@ -26,7 +26,7 @@ function Projects() {
   return (
     <section
       id={headerItems.projects.page}
-      className="flex flex-col text-center justify-center items-center mb-5 md:mb-96"
+      className="flex flex-col justify-center items-center mb-5 md:mb-96"
     >
       <h1 className="text-6xl my-6 mt-28">Projects</h1>
       <div className="h-96 w-3/4 mb-5 rounded shadow-lg">
@@ -55,13 +55,13 @@ function Projects() {
         </Carousel>
       </div>
 
-      <div className="h-64 w-3/4 bg-slate-700 dark:bg-slate-100 rounded-lg">
-        <ul className="text-white text-sm p-4">
+      <div className="h-64 w-3/4 bg-slate-700 text-left dark:bg-slate-100 rounded-lg">
+        <div className="text-white text-sm p-4 lg:text-lg">
           {Array.isArray(description)
-            ? description.map((item, index) => <li key={index}>{item}</li>)
-            : <li>{description}</li>
+            ? description.map((item, index) => <p key={index}>{item}</p>)
+            : <p>{description}</p>
           }
-        </ul>
+        </div>
       </div>
 
     </section>
