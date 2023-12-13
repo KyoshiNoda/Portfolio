@@ -1,5 +1,6 @@
 import { UserObject } from "@/types/User";
 import { NavItems } from "@/types/NavBar";
+import { Project } from "@/types/Projects";
 export const userInfo: UserObject = {
   name: "Kyoshi Noda",
   picture:
@@ -32,47 +33,52 @@ export const headerItems: NavItems = {
   career: { label: "Career", page: "career" },
 };
 
-// TODO ADD TECH STACK
-export const projects = {
+export const projects: Record<string, Project>= {
   ScheduleFinder: {
     name: "ScheduleFinder",
     image: "/projects/ScheduleFinder.png",
-    link: "https://github.com/KyoshiNoda/ScheduleFinder",
+    repo: "https://github.com/KyoshiNoda/ScheduleFinder",
+    demo : "https://schedulefinder.netlify.app/",
     description: [
       "• Full stack social media application that enables users to create and compare schedules with other users.",
       "• Allows people to browse and find new friends that are available in their free times.",
       "• Comes with advanced filtering systems on other users, making friends with common interests is extremely easy and intuitive.",
-    ]
+    ],
+    techStack: ["Typescript", "React", "Express", "MongoDB", "TailwindCSS", "Redux"],
   },
   Codingforall: {
     name: "CodingForAll",
     image: "/projects/Codingforall.png",
-    link: "https://github.com/KyoshiNoda/FSC-Coding-Society",
+    repo: "https://github.com/KyoshiNoda/FSC-Coding-Society",
+    demo: "https://acm-coding-society.netlify.app/",
     description: [
       "• Designed & Implemented the FSC Coding Society Website",
       "• Members can see active events",
       "• Executives can edit news and current executives.",
-    ]
+    ],
+    techStack: ["Javascript", "React", "Tailwindcss", "Express", "PostgreSQL", "HeadlessUI"],
   },
   ProsCons: {
     name: "ProsCons",
     image: "/projects/ProsCons.png",
-    link: "https://github.com/KyoshiNoda/ProsCons",
+    repo: "https://github.com/KyoshiNoda/ProsCons",
     description: [
       "• Web Application that allows users to create pros and cons and separates into groups for better decision making",
       "• Powerful visualization between items and allows users to compare and contrast better.",
       "• Follows MVC approach and maintains good backend practices.",
-    ]
+    ],
+    techStack: ["Javascript", "React", "Express", "MYSQL", "TailwindCSS"],
   },
   SteamTime: {
     name: "SteamTime",
     image: "/projects/SteamTime.png",
-    link: "https://github.com/KyoshiNoda/Steam-Time",
+    repo: "https://github.com/KyoshiNoda/Steam-Time",
     description: [
       "• Alerts user when they have played to much videogames in a session.",
       "• Tracks their gaming session and provide health statistics.",
-      "• Cultivates a healthy game /break ratio and attempts to prevent the user from playing videogames too long",
-    ]
+      "• Cultivates a healthy game/break ratio and attempts to prevent the user from playing videogames too long",
+    ],
+    techStack: ["Python", "Javascript", "React", "Flask", "MongoDB", "TailwindCSS"],
   },
 };
 

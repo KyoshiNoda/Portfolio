@@ -4,6 +4,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Carousel } from 'flowbite-react';
 import { headerItems, projects } from '@/constants/constant';
+import { FaGithub } from "react-icons/fa";
+import { IoIosLink } from "react-icons/io";
 
 function Projects() {
   const [tab, setTab] = useState<number>(0);
@@ -30,12 +32,9 @@ function Projects() {
     >
       <h1 className="text-6xl my-6 mt-28">Projects</h1>
       <div className="h-96 w-3/4 mb-5 rounded shadow-lg">
-        <Carousel onSlideChange={handleCarouselChange}>
+        <Carousel onSlideChange={handleCarouselChange} slide={false}>
           {Object.keys(projects).map((project) => (
-            <Link
-              href={projects[project as keyof typeof projects].link}
-              key={projects[project as keyof typeof projects].name}
-            >
+            <>
               <h2 className="text-2xl">
                 {projects[project as keyof typeof projects].name}
               </h2>
@@ -50,19 +49,47 @@ function Projects() {
                   />
                 </div>
               </div>
-            </Link>
+            </>
           ))}
         </Carousel>
       </div>
 
-      <div className="h-64 w-3/4 bg-slate-700 text-left dark:bg-slate-100 rounded-lg">
-        <div className="text-white text-sm p-4 lg:text-lg">
+      <div className="h-64 w-3/4 bg-slate-700 text-left dark:bg-slate-100 rounded-lg relative">
+        <div className="text-white dark:text-black text-sm p-4 lg:text-lg">
           {Array.isArray(description)
             ? description.map((item, index) => <p key={index}>{item}</p>)
             : <p>{description}</p>
           }
         </div>
+        <div className='ml-3'>
+          {projects[Object.keys(projects)[tab] as keyof typeof projects].techStack.map((item) => (
+            <span className="bg-blue-400 m-1 p-2 rounded-md inline-block text-sm text-black">
+              {item}
+            </span>
+          ))}
+        </div>
+
+        <div className='ml-3 absolute bottom-0 right-0 mb-4 mr-4 flex flex-row space-x-2'>
+          {projects[Object.keys(projects)[tab] as keyof typeof projects].demo && (
+            <Link href={projects[Object.keys(projects)[tab] as keyof typeof projects].demo!}
+              className='bg-blue-500 rounded p-1 flex justify-center items-center space-x-1 gap-1 text-white'
+            >
+              Demo
+              <IoIosLink size={20} />
+            </Link>
+
+          )}
+
+          {projects[Object.keys(projects)[tab] as keyof typeof projects].repo && (
+            <Link href={projects[Object.keys(projects)[tab] as keyof typeof projects].repo}
+              className='bg-slate-900 rounded p-1 flex justify-center items-center space-x-1 gap-1 text-white'>
+              Repo
+              <FaGithub size={20} />
+            </Link>
+          )}
+        </div>
       </div>
+
 
     </section>
   );
