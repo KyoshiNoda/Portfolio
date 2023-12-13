@@ -54,43 +54,43 @@ function Projects() {
         </Carousel>
       </div>
 
-      <div className="h-64 w-3/4 bg-slate-700 text-left dark:bg-slate-100 rounded-lg relative">
+      <div className="h-auto md:h-64 w-3/4 bg-slate-700 text-left dark:bg-slate-100 rounded-lg relative">
         <div className="text-white dark:text-black text-sm p-4 lg:text-lg">
           {Array.isArray(description)
             ? description.map((item, index) => <p key={index}>{item}</p>)
             : <p>{description}</p>
           }
         </div>
-        <div className='ml-3'>
+        <div className='ml-3 flex flex-wrap'>
           {projects[Object.keys(projects)[tab] as keyof typeof projects].techStack.map((item) => (
-            <span className="bg-blue-400 m-1 p-2 rounded-md inline-block text-sm text-black">
+            <span key={item} className="bg-blue-400 m-1 p-2 rounded-md inline-block text-sm text-black">
               {item}
             </span>
           ))}
         </div>
 
-        <div className='ml-3 absolute bottom-0 right-0 mb-4 mr-4 flex flex-row space-x-2'>
+        <div className='ml-auto p-3 lg:p-0 lg:ml-4 mt-4 flex flex-col space-y-2 lg:flex-row lg:items-end lg:space-y-0 lg:space-x-2'>
           {projects[Object.keys(projects)[tab] as keyof typeof projects].demo && (
-            <Link href={projects[Object.keys(projects)[tab] as keyof typeof projects].demo!}
-              className='bg-blue-500 rounded p-1 flex justify-center items-center space-x-1 gap-1 text-white'
+            <Link
+              href={projects[Object.keys(projects)[tab] as keyof typeof projects].demo!}
+              className='bg-blue-500 rounded p-2 flex justify-center items-center space-x-1 gap-1 text-white'
             >
               Demo
               <IoIosLink size={20} />
             </Link>
-
           )}
 
           {projects[Object.keys(projects)[tab] as keyof typeof projects].repo && (
-            <Link href={projects[Object.keys(projects)[tab] as keyof typeof projects].repo}
-              className='bg-slate-900 rounded p-1 flex justify-center items-center space-x-1 gap-1 text-white'>
+            <Link
+              href={projects[Object.keys(projects)[tab] as keyof typeof projects].repo}
+              className='bg-slate-900 rounded p-2 flex justify-center items-center space-x-1 gap-1 text-white mt-2 lg:mt-0'
+            >
               Repo
               <FaGithub size={20} />
             </Link>
           )}
         </div>
       </div>
-
-
     </section>
   );
 }
