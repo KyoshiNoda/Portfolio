@@ -7,20 +7,21 @@ import { headerItems, projects } from '@/constants/constant';
 
 function Projects() {
   const [tab, setTab] = useState<number>(0);
-  const [description, setDescription] = useState<string>(
-    projects[Object.keys(projects)[0] as keyof typeof projects].description
-  );
+  const [description, setDescription] = useState<string | string[]>('');
 
   const handleCarouselChange = (index: number) => {
     setTab(index);
     const projectKey = Object.keys(projects)[index];
-    setDescription(projects[projectKey as keyof typeof projects].description);
+    const projectDescription = projects[projectKey as keyof typeof projects].description;
+    const descriptionArray = Array.isArray(projectDescription)
+      ? projectDescription
+      : [projectDescription];
+    setDescription(descriptionArray);
   };
-  useEffect(() => {
-    // Update the description on the client side after the component is mounted.
-    setDescription(projects[Object.keys(projects)[0] as keyof typeof projects].description);
-  }, []); // Ensure the dependencies array is empty if you want it to run only once on mount.
   
+  useEffect(() => {
+    setDescription(projects[Object.keys(projects)[0] as keyof typeof projects].description);
+  }, []);
 
   return (
     <section
@@ -55,8 +56,14 @@ function Projects() {
       </div>
 
       <div className="h-64 w-3/4 bg-slate-700 dark:bg-slate-100 rounded-lg">
-        <p className="text-white  text-sm p-4" dangerouslySetInnerHTML={{ __html: description || '' }} />
+        <ul className="text-white text-sm p-4">
+          {Array.isArray(description)
+            ? description.map((item, index) => <li key={index}>{item}</li>)
+            : <li>{description}</li>
+          }
+        </ul>
       </div>
+
     </section>
   );
 }

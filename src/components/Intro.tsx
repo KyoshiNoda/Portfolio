@@ -46,7 +46,7 @@ function Intro() {
         <ScrollLink
           to={headerItems.projects.page}
           className={
-            "bg-blue-600 rounded text-neutral-100 flex w-28 h-10 m-auto items-center justify-center md:m-0 mt-4"
+            "bg-blue-600 rounded text-neutral-100 flex w-28 h-10 m-auto items-center justify-center md:m-0 mt-4 cursor-pointer"
           }
           spy={true}
           smooth={true}
