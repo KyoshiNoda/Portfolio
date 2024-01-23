@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { userInfo, headerItems } from "../constants/constant";
 import { NavItems } from "@/types/NavBar";
 import { BiMenu } from "react-icons/bi";
@@ -7,7 +7,19 @@ import ThemeSwitcher from "@/app/ThemeSwitcher";
 import { Link as ScrollLink } from "react-scroll";
 
 function NavBar() {
-  const [isMobile, setIsMobile] = useState<boolean>(window.screen.width < 768);
+  const [isMobile, setIsMobile] = useState<boolean>(false);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <header className="bg-gray-50 dark:bg-slate-800 dark:text-white p-6 md:flex w-full z-10 justify-between fixed top-0 text-black">
       <div className="flex justify-between">
