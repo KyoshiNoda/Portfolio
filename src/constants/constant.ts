@@ -8,9 +8,9 @@ export const userInfo: UserObject = {
   heading:
     "I am a passionate Computer Science student with a strong foundation in programming and problem-solving. Alongside my studies, I have actively shared my knowledge as a tutor for various CS courses. I also gained practical experience through a rewarding software engineering internship, where I contributed to real-world projects and honed my development skills.",
 
-  about: `<p>• I'm a junior in my second semester at <b>Farmingdale State College</b>, set to graduate in Fall 2024.</p>
-    <p>• I'm a dedicated developer who enjoys bringing ideas to life through coding.</p>
-    <p>• Outside of coding, I'm a casual soccer player and fan, and I also love to kick back and play video games.</p>`,
+  about: `<p>• I'm a senior studying in <b>Farmingdale State College</b>, set to graduate in Fall 2024.</p>
+    <p>• I'm a dedicated developer who enjoys bringing ideas to life.</p>
+    <p>•Primarily focused on full stack development.</p>`,
   skills: [
     "Typescript",
     "Golang",
@@ -33,18 +33,25 @@ export const headerItems: NavItems = {
   career: { label: "Career", page: "career" },
 };
 
-export const projects: Record<string, Project>= {
+export const projects: Record<string, Project> = {
   ScheduleFinder: {
     name: "ScheduleFinder",
     image: "/projects/ScheduleFinder.png",
     repo: "https://github.com/KyoshiNoda/ScheduleFinder",
-    demo : "https://schedulefinder.netlify.app/",
+    demo: "https://schedulefinder.netlify.app/",
     description: [
       "• Full stack social media application that enables users to create and compare schedules with other users.",
       "• Allows people to browse and find new friends that are available in their free times.",
       "• Comes with advanced filtering systems on other users, making friends with common interests is extremely easy and intuitive.",
     ],
-    techStack: ["Typescript", "React", "Express", "MongoDB", "TailwindCSS", "Redux"],
+    techStack: [
+      "Typescript",
+      "React",
+      "Express",
+      "MongoDB",
+      "TailwindCSS",
+      "Redux",
+    ],
   },
   Codingforall: {
     name: "CodingForAll",
@@ -56,7 +63,14 @@ export const projects: Record<string, Project>= {
       "• Members can see active events",
       "• Executives can edit news and current executives.",
     ],
-    techStack: ["Javascript", "React", "Tailwindcss", "Express", "PostgreSQL", "HeadlessUI"],
+    techStack: [
+      "Javascript",
+      "React",
+      "Tailwindcss",
+      "Express",
+      "PostgreSQL",
+      "HeadlessUI",
+    ],
   },
   ProsCons: {
     name: "ProsCons",
@@ -78,22 +92,28 @@ export const projects: Record<string, Project>= {
       "• Tracks their gaming session and provide health statistics.",
       "• Cultivates a healthy game/break ratio and attempts to prevent the user from playing videogames too long",
     ],
-    techStack: ["Python", "Javascript", "React", "Flask", "MongoDB", "TailwindCSS"],
+    techStack: [
+      "Python",
+      "Javascript",
+      "React",
+      "Flask",
+      "MongoDB",
+      "TailwindCSS",
+    ],
   },
 };
-
 
 export const footerItems = {
   Resume: {
     name: "Resume",
-    link: "https://docs.google.com/document/d/10YZCabidMoFBT4ft1ocBWDAmS8LbiVzB/edit?usp=sharing&rtpof=true&sd=true"
+    link: "https://docs.google.com/document/d/10YZCabidMoFBT4ft1ocBWDAmS8LbiVzB/edit?usp=sharing&rtpof=true&sd=true",
   },
   DevPost: {
     name: "Devpost",
-    link: "https://devpost.com/KyoshiNoda"
+    link: "https://devpost.com/KyoshiNoda",
   },
   Linkedin: {
     name: "Linkedin",
-    link: "https://www.linkedin.com/in/kyoshi-noda/"
-  }
-}
+    link: "https://www.linkedin.com/in/kyoshi-noda/",
+  },
+};

@@ -7,7 +7,7 @@ import ThemeSwitcher from "@/app/ThemeSwitcher";
 import { Link as ScrollLink } from "react-scroll";
 
 function NavBar() {
-  const [isMobile, setIsMobile] = useState<boolean>(false);
+  const [isMobile, setIsMobile] = useState<boolean>(window.screen.width < 768);
   return (
     <header className="bg-gray-50 dark:bg-slate-800 dark:text-white p-6 md:flex w-full z-10 justify-between fixed top-0 text-black">
       <div className="flex justify-between">

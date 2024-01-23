@@ -33,7 +33,7 @@ function About() {
           alt=""
           width={300}
           height={300}
-          className={"m-auto rounded shadow-xl"}
+          className={"m-auto rounded shadow-2xl border-2"}
         />
         <div className="break-words w-3/4 mt-3">
           <span className="bg-gray-200 m-1 p-2 rounded-md inline-block text-sm text-black ">
