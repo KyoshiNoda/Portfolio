@@ -2,17 +2,7 @@ import Image from "next/image";
 import { headerItems } from "@/constants/constant";
 import { userInfo } from "@/constants/constant";
 import aboutPicture from "../../public/aboutPicture.jpg";
-import { SiTypescript, SiNextdotjs, SiMysql, SiExpress } from "react-icons/si";
-import {
-  BiLogoPython,
-  BiLogoReact,
-  BiLogoSpringBoot,
-  BiLogoMongodb,
-  BiLogoAngular,
-  BiLogoTailwindCss,
-  BiLogoSass
-} from "react-icons/bi";
-import { TbBrandGolang } from "react-icons/tb";
+
 function About() {
   return (
     <section
@@ -36,88 +26,20 @@ function About() {
           className={"m-auto rounded shadow-2xl border-2"}
         />
         <div className="break-words w-3/4 mt-3">
-          <span className="bg-gray-200 m-1 p-2 rounded-md inline-block text-sm text-black ">
-            Typescript{" "}
-            <span className="inline-block" style={{ verticalAlign: "middle" }}>
-              <SiTypescript />
+          {userInfo.skills.map((skill) => (
+            <span
+              key={skill.name}
+              className="bg-gray-200 m-1 p-2 rounded-md inline-block text-sm text-black"
+            >
+              {skill.name}{" "}
+              <span
+                className="inline-block"
+                style={{ verticalAlign: "middle" }}
+              >
+                {skill.icon}
+              </span>
             </span>
-          </span>
-
-          <span className="bg-gray-200 m-1 p-2 rounded-md inline-block text-sm text-black ">
-            Golang{" "}
-            <span className="inline-block" style={{ verticalAlign: "middle" }}>
-              <TbBrandGolang size={20} />
-            </span>
-          </span>
-
-          <span className="bg-gray-200 m-1 p-2 rounded-md inline-block text-sm text-black ">
-            Python{" "}
-            <span className="inline-block" style={{ verticalAlign: "middle" }}>
-              <BiLogoPython size={20} />
-            </span>
-          </span>
-
-          <span className="bg-gray-200 m-1 p-2 rounded-md inline-block text-sm text-black ">
-            React{" "}
-            <span className="inline-block" style={{ verticalAlign: "middle" }}>
-              <BiLogoReact size={20} />
-            </span>
-          </span>
-
-          <span className="bg-gray-200 m-1 p-2 rounded-md inline-block text-sm text-black ">
-            Next{" "}
-            <span className="inline-block" style={{ verticalAlign: "middle" }}>
-              <SiNextdotjs size={20} />
-            </span>
-          </span>
-
-          <span className="bg-gray-200 m-1 p-2 rounded-md inline-block text-sm text-black ">
-            Spring Boot{" "}
-            <span className="inline-block" style={{ verticalAlign: "middle" }}>
-              <BiLogoSpringBoot size={20} />
-            </span>
-          </span>
-
-          <span className="bg-gray-200 m-1 p-2 rounded-md inline-block text-sm text-black ">
-            MySQL{" "}
-            <span className="inline-block" style={{ verticalAlign: "middle" }}>
-              <SiMysql size={20} />
-            </span>
-          </span>
-
-          <span className="bg-gray-200 m-1 p-2 rounded-md inline-block text-sm text-black ">
-            MongoDB{" "}
-            <span className="inline-block" style={{ verticalAlign: "middle" }}>
-              <BiLogoMongodb size={20} />
-            </span>
-          </span>
-
-          <span className="bg-gray-200 m-1 p-2 rounded-md inline-block text-sm text-black ">
-            Express{" "}
-            <span className="inline-block" style={{ verticalAlign: "middle" }}>
-              <SiExpress size={20} />
-            </span>
-          </span>
-
-          <span className="bg-gray-200 m-1 p-2 rounded-md inline-block text-sm text-black ">
-            Angular{" "}
-            <span className="inline-block" style={{ verticalAlign: "middle" }}>
-              <BiLogoAngular size={20} />
-            </span>
-          </span>
-
-          <span className="bg-gray-200 m-1 p-2 rounded-md inline-block text-sm text-black ">
-            Tailwindcss{" "}
-            <span className="inline-block" style={{ verticalAlign: "middle" }}>
-              <BiLogoTailwindCss size={20} />
-            </span>
-          </span>
-          <span className="bg-gray-200 m-1 p-2 rounded-md inline-block text-sm text-black ">
-            Sass{" "}
-            <span className="inline-block" style={{ verticalAlign: "middle" }}>
-              <BiLogoSass size={20} />
-            </span>
-          </span>
+          ))}
         </div>
       </div>
     </section>

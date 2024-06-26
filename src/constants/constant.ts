@@ -1,28 +1,50 @@
 import { UserObject } from "@/types/User";
 import { NavItems } from "@/types/NavBar";
 import { Project } from "@/types/Projects";
+import { SiTypescript, SiNextdotjs, SiMysql, SiExpress } from "react-icons/si";
+import React from "react";
+import {
+  BiLogoPython,
+  BiLogoReact,
+  BiLogoSpringBoot,
+  BiLogoMongodb,
+  BiLogoAngular,
+  BiLogoTailwindCss,
+  BiLogoSass,
+} from "react-icons/bi";
+import { TbBrandGolang } from "react-icons/tb";
 export const userInfo: UserObject = {
   name: "Kyoshi Noda",
   picture:
     "https://media.licdn.com/dms/image/C4E03AQF7xB3WcNl6zQ/profile-displayphoto-shrink_400_400/0/1614718854555?e=1698278400&v=beta&t=YMr-yK8n_y75DFIhkPKgyV2TE56d9Ar1Yg92yIbCfp0",
   heading:
     "I am a passionate Computer Science student with a strong foundation in programming and problem-solving. Alongside my studies, I have actively shared my knowledge as a tutor for various CS courses. I also gained practical experience through a rewarding software engineering internship, where I contributed to real-world projects and honed my development skills.",
-
   about: `<p>• I'm a senior studying in <b>Farmingdale State College</b>, set to graduate in Fall 2024.</p>
     <p>• I'm a dedicated developer who enjoys bringing ideas to life.</p>
     <p>•Primarily focused on full stack development.</p>`,
   skills: [
-    "Typescript",
-    "Golang",
-    "Python",
-    "React",
-    "Next",
-    "Spring Boot",
-    "Tailwindcss",
-    "MYSQL",
-    "MongoDB",
-    "Express",
-    "Angular",
+    { name: "Typescript", icon: React.createElement(SiTypescript) },
+    { name: "Golang", icon: React.createElement(TbBrandGolang, { size: 20 }) },
+    { name: "Python", icon: React.createElement(BiLogoPython, { size: 20 }) },
+    { name: "React", icon: React.createElement(BiLogoReact, { size: 20 }) },
+    { name: "Next", icon: React.createElement(SiNextdotjs, { size: 20 }) },
+    {
+      name: "Spring Boot",
+      icon: React.createElement(BiLogoSpringBoot, { size: 20 }),
+    },
+    {
+      name: "Tailwindcss",
+      icon: React.createElement(BiLogoTailwindCss, { size: 20 }),
+    },
+    { name: "MYSQL", icon: React.createElement(SiMysql, { size: 20 }) },
+    { name: "MongoDB", icon: React.createElement(BiLogoMongodb, { size: 20 }) },
+    { name: "Express", icon: React.createElement(SiExpress, { size: 20 }) },
+    { name: "Angular", icon: React.createElement(BiLogoAngular, { size: 20 }) },
+    {
+      name: "TailwindCSS",
+      icon: React.createElement(BiLogoTailwindCss, { size: 20 }),
+    },
+    { name: "Sass", icon: React.createElement(BiLogoSass, { size: 20 }) },
   ],
 };
 

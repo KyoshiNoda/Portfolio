@@ -40,7 +40,7 @@ function Intro() {
           !
         </h1>
         <p
-          className={"md:mt-4 md:mb-4 sm:"}
+          className={"md:mt-4 md:mb-4 px-4 md:px-0"}
           dangerouslySetInnerHTML={{ __html: userInfo.heading }}
         />
         <ScrollLink
