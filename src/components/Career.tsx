@@ -1,5 +1,5 @@
 "use client";
-import { headerItems } from "@/constants/constant";
+import { CareerInfo, headerItems } from "@/constants/constant";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -19,76 +19,45 @@ export default function Career() {
       className="flex-col justify-center items-center md:flex-row pt-32 pl-11 bg-blue-300 dark:bg-slate-900"
     >
       <span className="text-6xl my-6 mt-3 text-white">Career</span>
-      <VerticalTimeline className=" space-y-24 mt-28">
-      <VerticalTimelineElement
-          className="vertical-timeline-element--work"
+      <VerticalTimeline className="space-y-24 mt-28">
+        <VerticalTimelineElement
           contentStyle={{ background: contentStyle.background, color: "#fff" }}
           contentArrowStyle={{ borderRight: ")" }}
           date="May 2023 - Present"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<MdOutlineWork />}
         >
-          <h1 className="vertical-timeline-element-title text-2xl">
-            Software Engineer Intern
-          </h1>
-          <h1 className="text-xl">SAS Institute</h1>
-          <h4 className="vertical-timeline-element-subtitle font-bold">
-            Cary, NC
-          </h4>
+          <h1 className="text-2xl">{CareerInfo[0].role}</h1>
+          <h1 className="text-xl">{CareerInfo[0].company}</h1>
+          <h4 className="font-bold">{CareerInfo[0].location}</h4>
           <p>
-            ● Handled full stack development for license generations for all SAS
-            software. <br />
-            ● Developed responsive user-friendly front-end components with
-            Angular with Typescript that handled license metadata.
-            <br />
-            ● Implemented RESTful APIs using Spring Boot that dealt with license
-            expirations. <br />● Developed comprehensive unit tests for both
-            front-end and back-end, ensuring a robust and error-free
-            application.
+            {CareerInfo[0].description.map((bullet) => (
+              <span>
+                {bullet}
+                <br />
+              </span>
+            ))}
           </p>
         </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="August 2021 - May 2023"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={<MdOutlineWork />}
-        >
-          <h1 className="vertical-timeline-element-title dark:text-black text-2xl">
-            Computer Science Tutor
-          </h1>
-          <h2 className="text-sm">Farmingdale State College</h2>
-          <h4 className="vertical-timeline-element-subtitle dark:text-black font-bold">
-            Farmingdale, NY
-          </h4>
-          <p className="dark:text-black">
-            ● Tutored various programming courses (Intro Programming, Object
-            Oriented, Data Structures) at university level with over 50 active
-            students. <br />● Responsible for creating personalized practice
-            questions and demonstrating strong communication skills.
-          </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="April 2021 - May 2022"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={<MdOutlineWork />}
-        >
-          <h1 className="vertical-timeline-element-title dark:text-black text-2xl">
-            Vice President ACM
-          </h1>
-          <h2 className="text-sm">Farmingdale State College</h2>
-          <h4 className="vertical-timeline-element-subtitle dark:text-black font-bold">
-            Farmingdale, NY
-          </h4>
-          <p className="dark:text-black">
-            ● Founded a computer science ACM Chapter for university with over
-            250 active members.
-            <br />
-            ● Responsible for organizing numerous events that involved technical
-            talks with industry professionals. <br />● Responsible for
-            interviewing over 50+ candidates for executive positions
-          </p>
-        </VerticalTimelineElement>
+        {CareerInfo.slice(1).map((job) => (
+          <VerticalTimelineElement
+            date={job.dates}
+            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+            icon={<MdOutlineWork />}
+          >
+            <h1 className="dark:text-black text-2xl">{job.role}</h1>
+            <h2 className="text-sm">{job.company}</h2>
+            <h4 className="ee dark:text-black font-bold">{job.location}</h4>
+            <p className="dark:text-black">
+              {job.description.map((bullet) => (
+                <span>
+                  {bullet}
+                  <br />
+                </span>
+              ))}
+            </p>
+          </VerticalTimelineElement>
+        ))}
       </VerticalTimeline>
     </section>
   );

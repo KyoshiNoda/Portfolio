@@ -13,6 +13,7 @@ import {
   BiLogoSass,
 } from "react-icons/bi";
 import { TbBrandGolang } from "react-icons/tb";
+import { CareerObject } from "@/types/Career";
 export const userInfo: UserObject = {
   name: "Kyoshi Noda",
   picture:
@@ -139,3 +140,39 @@ export const footerItems = {
     link: "https://www.linkedin.com/in/kyoshi-noda/",
   },
 };
+
+export const CareerInfo: CareerObject[] = [
+  {
+    company: "SAS Institute",
+    role: "Software Engineer Intern",
+    location: "Cary, NC",
+    dates: "May 2023 - Present",
+    description: [
+      `● Developed responsive user-friendly front-end components with Angular with Typescript that handled license metadata.`,
+      `● Implemented RESTful APIs using Spring Boot that dealt with license expirations.`,
+      `● Conducted full stack unit testing with 95-100% line coverage using Mockito, Junit, Jest, Jasmine, TestBed etc. `,
+      `● Designed and implemented Python testing tool script using Pandas and Matplotlib to facilitate QA Testing.`
+    ],
+  },
+  {
+    company: "Farmingdale State College",
+    role: "Computer Science Tutor",
+    location: "Farmingdale, NY",
+    dates: "August 2021 - May 2023",
+    description: [
+      `● Tutored various programming courses (Intro Programming, Object Oriented, Data Structures) at university level with over 50 active students.`,
+      `● Responsible for creating personalized practice questions and demonstrating strong communication skills.`,
+    ],
+  },
+  {
+    company: "Association for Computing Machinery (ACM)",
+    role: "Vice President",
+    location: "Farmingdale, NY",
+    dates: "April 2021 - May 2022",
+    description: [
+      `● Founded a computer science ACM chapter for university with over 250 active members.`,
+      `● Responsible for organizing numerous events that involved technical talks with industry professionals.`,
+      `● Responsible for interviewing over 50+ candidates for executive positions`,
+    ],
+  },
+];
