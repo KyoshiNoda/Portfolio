@@ -55,9 +55,9 @@ function Projects() {
       </div>
 
       <div className="h-auto md:h-64 w-3/4 bg-slate-700 text-left dark:bg-slate-100 rounded-lg relative">
-        <div className="text-white dark:text-black text-sm p-4 lg:text-lg">
+        <div className="text-white dark:text-black p-4 lg:text-lg">
           {Array.isArray(description)
-            ? description.map((item, index) => <p key={index}>{item}</p>)
+            ? description.map((item, index) => <p key={index} className='text-sm'>{item}</p>)
             : <p>{description}</p>
           }
         </div>

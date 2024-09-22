@@ -63,9 +63,9 @@ export const projects: Record<string, Project> = {
     repo: "https://github.com/KyoshiNoda/ScheduleFinder",
     demo: "https://schedulefinder.netlify.app/",
     description: [
-      "• Full stack social media application that enables users to create and compare schedules with other users.",
-      "• Allows people to browse and find new friends that are available in their free times.",
-      "• Comes with advanced filtering systems on other users, making friends with common interests is extremely easy and intuitive.",
+      "• Developed a full-stack social media app that enables users to create and compare schedules with others, tailored for individuals seeking to connect with others based on shared availability and common hobbies.",
+      "• Integrated an AI-powered user recommendation engine using a Weighted Sum (WS) model following the Multi-Objective Optimization (MOO) framework to match users based on availability, distance, hobbies, and gender preferences.",
+      "• Implemented a friend request system with automated email notifications, enhancing user engagement and retention rates.",
     ],
     techStack: [
       "Typescript",
@@ -129,7 +129,7 @@ export const projects: Record<string, Project> = {
 export const footerItems = {
   Resume: {
     name: "Resume",
-    link: "https://docs.google.com/document/d/10YZCabidMoFBT4ft1ocBWDAmS8LbiVzB/edit?usp=sharing&rtpof=true&sd=true",
+    link: "https://docs.google.com/document/d/1pB0N9KZuMRVk1opGjF47uMzQLs-5aCvg/edit?usp=sharing&ouid=104674600947882521163&rtpof=true&sd=true",
   },
   DevPost: {
     name: "Devpost",
@@ -151,7 +151,7 @@ export const CareerInfo: CareerObject[] = [
       `● Developed responsive user-friendly front-end components with Angular with Typescript that handled license metadata.`,
       `● Implemented RESTful APIs using Spring Boot that dealt with license expirations.`,
       `● Conducted full stack unit testing with 95-100% line coverage using Mockito, Junit, Jest, Jasmine, TestBed etc. `,
-      `● Designed and implemented Python testing tool script using Pandas and Matplotlib to facilitate QA Testing.`
+      `● Designed and implemented Python testing tool script using Pandas and Matplotlib to facilitate QA Testing.`,
     ],
   },
   {
@@ -160,8 +160,9 @@ export const CareerInfo: CareerObject[] = [
     location: "Farmingdale, NY",
     dates: "August 2021 - May 2023",
     description: [
-      `● Tutored various programming courses (Intro Programming, Object Oriented, Data Structures) at university level with over 50 active students.`,
-      `● Responsible for creating personalized practice questions and demonstrating strong communication skills.`,
+      `● Tutored university-level programming courses to over 50 active students per semester, providing support for subjects such as Intro to Programming, Java Programming, and Data Structures & Algorithms.`,
+      `● Created 100+ personalized practice questions and mock exams to reinforce key concepts and enhance student understanding.`,
+      `● Conducted 20+ group workshops and review sessions each semester, helping students prepare for midterms and final exams.`,
     ],
   },
   {
@@ -170,9 +171,9 @@ export const CareerInfo: CareerObject[] = [
     location: "Farmingdale, NY",
     dates: "April 2021 - May 2022",
     description: [
-      `● Founded a computer science ACM chapter for university with over 250 active members.`,
-      `● Responsible for organizing numerous events that involved technical talks with industry professionals.`,
-      `● Responsible for interviewing over 50+ candidates for executive positions`,
+      `● Founded the university's ACM Chapter, growing membership to over 250 total members`,
+      `● Organized 15+ events with industry professionals, achieving an average turnout rate of 70%.`,
+      `● Led the recruitment process by interviewing over 50 candidates for executive roles, resulting in a 50% increase in the club's leadership team to better manage the expanding member base and event operations.`,
     ],
   },
 ];
