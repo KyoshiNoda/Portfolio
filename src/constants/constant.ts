@@ -19,10 +19,12 @@ export const userInfo: UserObject = {
   picture:
     "https://media.licdn.com/dms/image/C4E03AQF7xB3WcNl6zQ/profile-displayphoto-shrink_400_400/0/1614718854555?e=1698278400&v=beta&t=YMr-yK8n_y75DFIhkPKgyV2TE56d9Ar1Yg92yIbCfp0",
   heading:
-    "I am a passionate Computer Science student with a strong foundation in programming and problem-solving. Alongside my studies, I have actively shared my knowledge as a tutor for various CS courses. I also gained practical experience through a rewarding software engineering internship, where I contributed to real-world projects and honed my development skills.",
-  about: `<p>• I'm a senior studying in <b>Farmingdale State College</b>, set to graduate in Fall 2024.</p>
-    <p>• I'm a dedicated developer who enjoys bringing ideas to life.</p>
-    <p>•Primarily focused on full stack development.</p>`,
+    `CS student with a strong foundation in programming and problem-solving. 
+    Alongside my studies, I have actively shared my knowledge as a tutor for various CS courses. 
+    I also gained practical experience through a rewarding software engineering internship, where I contributed to real-world projects and honed my development skills.
+    `,
+  about: `<p>• I'm a graduate student studying in <b>CUNY Queens College</b>, set to graduate in Fall 2026.</p>
+    <p>•Primarily focused on Full Stack and Machine Learning development.</p>`,
   skills: [
     { name: "Typescript", icon: React.createElement(SiTypescript) },
     { name: "Golang", icon: React.createElement(TbBrandGolang, { size: 20 }) },
@@ -129,7 +131,7 @@ export const projects: Record<string, Project> = {
 export const footerItems = {
   Resume: {
     name: "Resume",
-    link: "https://docs.google.com/document/d/1pB0N9KZuMRVk1opGjF47uMzQLs-5aCvg/edit?usp=sharing&ouid=104674600947882521163&rtpof=true&sd=true",
+    link: "https://docs.google.com/document/d/1VHYBNz1q523e7bOWC_QUahdls_laq5dn/edit?usp=sharing&ouid=104674600947882521163&rtpof=true&sd=true",
   },
   DevPost: {
     name: "Devpost",
