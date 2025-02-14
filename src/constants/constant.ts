@@ -156,6 +156,17 @@ export const CareerInfo: CareerObject[] = [
   },
   {
     company: "Farmingdale State College",
+    role: "Undergraduate ML Researcher ",
+    location: "Farmingdale NY",
+    dates: "March 2024- Feb 2025",
+    description: [
+      `● Created a Random Forest machine learning model with 86% accuracy to predict the likelihood of professional soccer players getting injured in future games, in conjunction with Dr. Mohammed Alshibli, published by February 2025.`,
+      `● Collected and preprocessed 100,000+ data points from multiple sources, integrating real-time weather and match details to improve prediction accuracy by 15% using Python, Pandas, scikit-learn, TensorFlow, Beautiful Soup`,
+      `● Leveraged real-time APIs to provide injury predictions within 5 minutes of weather or game condition changes.`,
+    ],
+  },
+  {
+    company: "Farmingdale State College",
     role: "Computer Science Tutor",
     location: "Farmingdale, NY",
     dates: "August 2021 - May 2023",
@@ -171,9 +182,9 @@ export const CareerInfo: CareerObject[] = [
     location: "Farmingdale, NY",
     dates: "April 2021 - May 2022",
     description: [
-      `● Founded the university's ACM Chapter, growing membership to over 250 total members`,
-      `● Organized 15+ events with industry professionals, achieving an average turnout rate of 70%.`,
-      `● Led the recruitment process by interviewing over 50 candidates for executive roles, resulting in a 50% increase in the club's leadership team to better manage the expanding member base and event operations.`,
+      `● Founded the university's ACM Chapter, with total membership to 250+ and organizing 15+ diverse events, including industry experts talks, technical workshops, resume reviews, and networking, with a 70% average turnout.`,
+      `● Designed and oversaw the recruitment process by crafting a diverse set of interview questions and conducting interviews with over 50 candidates for executive roles, leading to a 50% expansion in the club's leadership team.`
+     
     ],
   },
 ];

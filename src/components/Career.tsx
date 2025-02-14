@@ -18,7 +18,7 @@ export default function Career() {
   return (
     <section
       id={headerItems.career.page}
-      className="flex-col justify-center items-center md:flex-row pt-32 pl-11 bg-blue-300 dark:bg-slate-900"
+      className="flex-col justify-center items-center md:flex-row pt-32 pl-11 bg-blue-400 dark:bg-slate-900"
     >
       <span className="text-6xl my-6 mt-3 text-white">Career</span>
       <VerticalTimeline className="space-y-24 mt-28">
@@ -51,7 +51,7 @@ export default function Career() {
           >
             <h1 className="dark:text-black text-2xl">{job.role}</h1>
             <h2 className="text-sm">{job.company}</h2>
-            <h4 className="ee dark:text-black font-bold">{job.location}</h4>
+            <h4 className="dark:text-black font-bold">{job.location}</h4>
             <p className="dark:text-black">
               {job.description.map((bullet, i) => (
                 <span key={i}>

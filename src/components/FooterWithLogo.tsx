@@ -24,7 +24,7 @@ export default function FooterWithLogo() {
         <Footer.Copyright
           by="Kyoshi Noda"
           href="#"
-          year={2024}
+          year={new Date().getFullYear()}
         />
       </div>
     </Footer>
