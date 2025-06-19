@@ -26,7 +26,7 @@ export default function Career() {
           key={CareerInfo[0].company + CareerInfo[0].role}
           contentStyle={{ background: contentStyle.background, color: "#fff" }}
           contentArrowStyle={{ borderRight: ")" }}
-          date="May 2023 - Present"
+          date={CareerInfo[0].dates}
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<MdOutlineWork />}
         >
@@ -42,7 +42,27 @@ export default function Career() {
             ))}
           </p>
         </VerticalTimelineElement>
-        {CareerInfo.slice(1).map((job, index) => (
+        <VerticalTimelineElement
+          key={CareerInfo[1].company + CareerInfo[1].role}
+          contentStyle={{ background: contentStyle.background, color: "#fff" }}
+          contentArrowStyle={{ borderRight: ")" }}
+          date={CareerInfo[1].dates}
+          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          icon={<MdOutlineWork />}
+        >
+          <h1 className="text-2xl">{CareerInfo[1].role}</h1>
+          <h1 className="text-xl">{CareerInfo[1].company}</h1>
+          <h4 className="font-bold">{CareerInfo[1].location}</h4>
+          <p>
+            {CareerInfo[1].description.map((bullet, index) => (
+              <span key={index}>
+                {bullet}
+                <br />
+              </span>
+            ))}
+          </p>
+        </VerticalTimelineElement>
+        {CareerInfo.slice(2).map((job, index) => (
           <VerticalTimelineElement
             key={job.company + job.role + index}
             date={job.dates}

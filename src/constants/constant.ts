@@ -18,8 +18,7 @@ export const userInfo: UserObject = {
   name: "Kyoshi Noda",
   picture:
     "https://media.licdn.com/dms/image/C4E03AQF7xB3WcNl6zQ/profile-displayphoto-shrink_400_400/0/1614718854555?e=1698278400&v=beta&t=YMr-yK8n_y75DFIhkPKgyV2TE56d9Ar1Yg92yIbCfp0",
-  heading:
-    `CS student with a strong foundation in programming and problem-solving. 
+  heading: `CS student with a strong foundation in programming and problem-solving. 
     Alongside my studies, I have actively shared my knowledge as a tutor for various CS courses. 
     I also gained practical experience through a rewarding software engineering internship, where I contributed to real-world projects and honed my development skills.
     `,
@@ -157,6 +156,16 @@ export const CareerInfo: CareerObject[] = [
     ],
   },
   {
+    company: "Code Path",
+    role: "Tech Fellow",
+    location: "San Francisco CA",
+    dates: "May 2025 - Present",
+    description: [
+      `● Mentored 300+ students in Technical Interview Prep 102 course, focusing on LeetCode-style data structures and algorithms covering topics such as Two Pointer, Hashmaps, Stacks, Queues, Linked List, Trees, Graphs, Dynamic Programming etc.`,
+      `● Led interactive discussions on problem-solving strategies and debugging techniques to enhance technical proficiency.`,
+    ],
+  },
+  {
     company: "Farmingdale State College",
     role: "Undergraduate ML Researcher ",
     location: "Farmingdale NY",
@@ -168,7 +177,7 @@ export const CareerInfo: CareerObject[] = [
     ],
   },
   {
-    company: "Farmingdale State College",
+    company: "Center for Academic Success & Tutoring",
     role: "Computer Science Tutor",
     location: "Farmingdale, NY",
     dates: "August 2021 - May 2023",
@@ -185,8 +194,7 @@ export const CareerInfo: CareerObject[] = [
     dates: "April 2021 - May 2022",
     description: [
       `● Founded the university's ACM Chapter, with total membership to 250+ and organizing 15+ diverse events, including industry experts talks, technical workshops, resume reviews, and networking, with a 70% average turnout.`,
-      `● Designed and oversaw the recruitment process by crafting a diverse set of interview questions and conducting interviews with over 50 candidates for executive roles, leading to a 50% expansion in the club's leadership team.`
-     
+      `● Designed and oversaw the recruitment process by crafting a diverse set of interview questions and conducting interviews with over 50 candidates for executive roles, leading to a 50% expansion in the club's leadership team.`,
     ],
   },
 ];
