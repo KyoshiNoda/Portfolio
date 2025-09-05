@@ -130,7 +130,7 @@ export const projects: Record<string, Project> = {
 export const footerItems = {
   Resume: {
     name: "Resume",
-    link: "https://docs.google.com/document/d/1VHYBNz1q523e7bOWC_QUahdls_laq5dn/edit?usp=sharing&ouid=104674600947882521163&rtpof=true&sd=true",
+    link: "https://docs.google.com/document/d/1wKAqrOIVBaaEueMLxlVPdbVBYgesVEsc/edit?usp=sharing&ouid=104674600947882521163&rtpof=true&sd=true",
   },
   DevPost: {
     name: "Devpost",
