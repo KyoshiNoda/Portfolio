@@ -155,20 +155,20 @@ export const CareerInfo: CareerObject[] = [
   {
     company: "SAS Institute",
     role: "Software Engineer Intern",
-    location: "Cary, NC",
+    location: "Cary, NC (Remote)",
     dates: "May 2023 - Present",
     description: [
-      `● Developed responsive user-friendly front-end components with Angular with Typescript that handled license metadata.`,
-      `● Implemented RESTful APIs using Spring Boot that dealt with license expirations.`,
-      `● Conducted full stack unit testing with 95-100% line coverage using Mockito, Junit, Jest, Jasmine, TestBed etc. `,
-      `● Designed and implemented Python testing tool script using Pandas and Matplotlib to facilitate QA Testing.`,
+      `● Long-term technical intern with three consecutive full-time summers and part-time work during academic terms.`,
+      `● Engineered reusable Angular end-to-end workflows/wizards integrated with NgRx for state management, featuring comprehensive error handling, real-time data synchronization, and dynamic store updates.`,
+      `● Created a Python testing tool script using Pandas and Matplotlib to detect and visualize discrepancies in license generation between legacy and modernized codebases, reducing issue identification time by 40%., `,
+      `● Built REST endpoints in Java Spring Boot enabling the automated issuance of emergency licenses for expired users.`,
     ],
   },
   {
     company: "Code Path",
     role: "Tech Fellow",
     location: "San Francisco CA",
-    dates: "May 2025 - Present",
+    dates: "May 2025 - August 2025",
     description: [
       `● Mentored 300+ students in Technical Interview Prep 102 course, focusing on LeetCode-style data structures and algorithms covering topics such as Two Pointer, Hashmaps, Stacks, Queues, Linked List, Trees, Graphs, Dynamic Programming etc.`,
       `● Led interactive discussions on problem-solving strategies and debugging techniques to enhance technical proficiency.`,
