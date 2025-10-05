@@ -1,9 +1,9 @@
-import NavBar from "@/components/NavBar";
-import Intro from "@/components/Intro";
-import About from "@/components/About";
-import Projects from "@/components/Projects";
-import Career from "@/components/Career";
-import FooterWithLogo from "@/components/FooterWithLogo";
+import NavBar from "@/sections/NavBar";
+import Intro from "@/sections/Intro";
+import About from "@/sections/About";
+import Projects from "@/sections/Projects";
+import Career from "@/sections/Career";
+import FooterWithLogo from "@/sections/FooterWithLogo";
 export default function Home() {
   return (
     <>
