@@ -153,10 +153,19 @@ export const footerItems = {
 
 export const CareerInfo: CareerObject[] = [
   {
+    company: "Capital One",
+    role: "Software Engineer Intern",
+    location: "McLean, VA",
+    dates: "June 2026 - August 2026",
+    description: [
+      `● Incoming Summer McLean.`,
+    ],
+  },
+  {
     company: "SAS Institute",
     role: "Software Engineer Intern",
     location: "Cary, NC (Remote)",
-    dates: "May 2023 - Present",
+    dates: "May 2023 - May 2026",
     description: [
       `● Long-term technical intern with three consecutive full-time summers and part-time work during academic terms.`,
       `● Engineered reusable Angular end-to-end workflows/wizards integrated with NgRx for state management, featuring comprehensive error handling, real-time data synchronization, and dynamic store updates.`,
