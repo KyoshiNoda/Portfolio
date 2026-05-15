@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.vertical-timeline-element-icon {
+  width: 80px !important;
+  height: 80px !important;
+  margin-left: -40px !important;
+  overflow: hidden !important;
+}

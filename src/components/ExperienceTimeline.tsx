@@ -9,6 +9,41 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
+const companyLogos: Record<string, { src: string; bgColor: string }> = {
+  "Capital One": { src: "/logos/330px-Capital_One_logo.svg", bgColor: "#FFFFFF" },
+  "SAS Institute": { src: "/logos/330px-SAS_logo_horiz.svg", bgColor: "#FFFFFF" },
+};
+
+function CompanyIcon({ company }: { company: string }) {
+  const logo = companyLogos[company];
+  if (logo) {
+    return (
+      <img
+        src={logo.src}
+        alt={company}
+        style={{
+          position: "absolute",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          width: "88%",
+          height: "88%",
+          objectFit: "contain",
+          padding: "5px",
+        }}
+      />
+    );
+  }
+  return <MdOutlineWork />;
+}
+
+function getIconStyle(company: string) {
+  const logo = companyLogos[company];
+  return logo
+    ? { background: logo.bgColor, color: "#fff" }
+    : { background: "rgb(33, 150, 243)", color: "#fff" };
+}
+
 export default function ExperienceTimeline() {
   const { theme } = useTheme();
   const contentStyle =
@@ -22,8 +57,8 @@ export default function ExperienceTimeline() {
         contentStyle={{ background: contentStyle.background, color: "#fff" }}
         contentArrowStyle={{ borderRight: ")" }}
         date={CareerInfo[0].dates}
-        iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-        icon={<MdOutlineWork />}
+        iconStyle={getIconStyle(CareerInfo[0].company)}
+        icon={<CompanyIcon company={CareerInfo[0].company} />}
       >
         <h1 className="text-2xl">{CareerInfo[0].role}</h1>
         <h1 className="text-xl">{CareerInfo[0].company}</h1>
@@ -41,8 +76,8 @@ export default function ExperienceTimeline() {
         <VerticalTimelineElement
           key={job.company + job.role + index}
           date={job.dates}
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={<MdOutlineWork />}
+          iconStyle={getIconStyle(job.company)}
+          icon={<CompanyIcon company={job.company} />}
         >
           <h1 className="dark:text-black text-2xl">{job.role}</h1>
           <h2 className="text-sm">{job.company}</h2>
